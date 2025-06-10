@@ -1,0 +1,432 @@
+{
+  "config": {
+    "configFile": "/Users/henrycole/Desktop/automation/playwright_regression/hr_regression/playwright.config.ts",
+    "rootDir": "/Users/henrycole/Desktop/automation/playwright_regression/hr_regression/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/henrycole/Desktop/automation/playwright_regression/hr_regression/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/henrycole/Desktop/automation/playwright_regression/hr_regression/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.52.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "account/profile.spec.ts",
+      "file": "account/profile.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Profile Management - Chrome Only",
+          "file": "account/profile.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Profile Field Updates",
+              "file": "account/profile.spec.ts",
+              "line": 44,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "should update all admin profile fields",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 25411,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔧 Setting up admin profile management test...\n"
+                            },
+                            {
+                              "text": "📝 Step 1: Navigating to login page\n"
+                            },
+                            {
+                              "text": "Handling popups and modals...\n"
+                            },
+                            {
+                              "text": "Checking for cookie banners...\n"
+                            },
+                            {
+                              "text": "No cookie banners found\n"
+                            },
+                            {
+                              "text": "Attempting to close any open modals...\n"
+                            },
+                            {
+                              "text": "No modals found to close\n"
+                            },
+                            {
+                              "text": "Checking for reCAPTCHA...\n"
+                            },
+                            {
+                              "text": "No reCAPTCHA found\n"
+                            },
+                            {
+                              "text": "Modal handling completed in 236ms\n"
+                            },
+                            {
+                              "text": "📝 Step 2: Logging in as admin user: admin@playwrightautomation.com\n"
+                            },
+                            {
+                              "text": "📍 Current URL after login: https://login.breathehrstaging.com/applications\n"
+                            },
+                            {
+                              "text": "✅ Admin login successful\n"
+                            },
+                            {
+                              "text": "🧪 Testing: Complete admin profile field updates\n"
+                            },
+                            {
+                              "text": "📝 Step 3: Navigating to profile page\n"
+                            },
+                            {
+                              "text": "📍 Navigating to profile page...\n"
+                            },
+                            {
+                              "text": "Handling popups and modals...\n"
+                            },
+                            {
+                              "text": "Checking for cookie banners...\n"
+                            },
+                            {
+                              "text": "No cookie banners found\n"
+                            },
+                            {
+                              "text": "Attempting to close any open modals...\n"
+                            },
+                            {
+                              "text": "No modals found to close\n"
+                            },
+                            {
+                              "text": "Checking for reCAPTCHA...\n"
+                            },
+                            {
+                              "text": "No reCAPTCHA found\n"
+                            },
+                            {
+                              "text": "Modal handling completed in 960ms\n"
+                            },
+                            {
+                              "text": "Handling popups and modals...\n"
+                            },
+                            {
+                              "text": "Checking for cookie banners...\n"
+                            },
+                            {
+                              "text": "No cookie banners found\n"
+                            },
+                            {
+                              "text": "Attempting to close any open modals...\n"
+                            },
+                            {
+                              "text": "No modals found to close\n"
+                            },
+                            {
+                              "text": "Checking for reCAPTCHA...\n"
+                            },
+                            {
+                              "text": "No reCAPTCHA found\n"
+                            },
+                            {
+                              "text": "Modal handling completed in 870ms\n"
+                            },
+                            {
+                              "text": "✅ Profile page loaded\n"
+                            },
+                            {
+                              "text": "📝 Step 4: Updating profile fields with test data\n"
+                            },
+                            {
+                              "text": "📊 Profile data: {\n  \"isDirector\": false,\n  \"department\": \"Human Resources\",\n  \"companyLocation\": \"PlayWright Automation\",\n  \"personLocation\": \"PlayWright Automation\",\n  \"provider\": \"Lebsack and Sons\",\n  \"contractType\": \"Permanent\",\n  \"noticePeriod\": \"1 month\",\n  \"paymentCurrency\": \"Great British Pound\",\n  \"joinDate\": \"01/01/2024\"\n}\n"
+                            },
+                            {
+                              "text": "📝 Starting complete profile update...\n"
+                            },
+                            {
+                              "text": "📍 Navigating to job edit form...\n"
+                            },
+                            {
+                              "text": "Handling popups and modals...\n"
+                            },
+                            {
+                              "text": "Checking for cookie banners...\n"
+                            },
+                            {
+                              "text": "No cookie banners found\n"
+                            },
+                            {
+                              "text": "Attempting to close any open modals...\n"
+                            },
+                            {
+                              "text": "No modals found to close\n"
+                            },
+                            {
+                              "text": "Checking for reCAPTCHA...\n"
+                            },
+                            {
+                              "text": "No reCAPTCHA found\n"
+                            },
+                            {
+                              "text": "Modal handling completed in 239ms\n"
+                            },
+                            {
+                              "text": "Handling popups and modals...\n"
+                            },
+                            {
+                              "text": "Checking for cookie banners...\n"
+                            },
+                            {
+                              "text": "No cookie banners found\n"
+                            },
+                            {
+                              "text": "Attempting to close any open modals...\n"
+                            },
+                            {
+                              "text": "No modals found to close\n"
+                            },
+                            {
+                              "text": "Checking for reCAPTCHA...\n"
+                            },
+                            {
+                              "text": "No reCAPTCHA found\n"
+                            },
+                            {
+                              "text": "Modal handling completed in 190ms\n"
+                            },
+                            {
+                              "text": "✅ Job edit form loaded\n"
+                            },
+                            {
+                              "text": "📝 Updating job profile fields...\n"
+                            },
+                            {
+                              "text": "Handling popups and modals...\n"
+                            },
+                            {
+                              "text": "Checking for cookie banners...\n"
+                            },
+                            {
+                              "text": "No cookie banners found\n"
+                            },
+                            {
+                              "text": "Attempting to close any open modals...\n"
+                            },
+                            {
+                              "text": "No modals found to close\n"
+                            },
+                            {
+                              "text": "Checking for reCAPTCHA...\n"
+                            },
+                            {
+                              "text": "No reCAPTCHA found\n"
+                            },
+                            {
+                              "text": "Modal handling completed in 220ms\n"
+                            },
+                            {
+                              "text": "📝 Setting director status: false\n"
+                            },
+                            {
+                              "text": "📝 Updating department: Human Resources\n"
+                            },
+                            {
+                              "text": "📝 Updating company location: PlayWright Automation\n"
+                            },
+                            {
+                              "text": "📝 Updating person location: PlayWright Automation\n"
+                            },
+                            {
+                              "text": "📝 Updating provider: Lebsack and Sons\n"
+                            },
+                            {
+                              "text": "📝 Updating notice period: 1 month\n"
+                            },
+                            {
+                              "text": "📝 Updating payment currency: Great British Pound\n"
+                            },
+                            {
+                              "text": "📝 Updating join date: 01/01/2024\n"
+                            },
+                            {
+                              "text": "✅ All available job fields updated\n"
+                            },
+                            {
+                              "text": "📝 Saving profile changes...\n"
+                            },
+                            {
+                              "text": "✅ Profile changes saved\n"
+                            },
+                            {
+                              "text": "📍 Navigating to profile page...\n"
+                            },
+                            {
+                              "text": "Handling popups and modals...\n"
+                            },
+                            {
+                              "text": "Checking for cookie banners...\n"
+                            },
+                            {
+                              "text": "No cookie banners found\n"
+                            },
+                            {
+                              "text": "Attempting to close any open modals...\n"
+                            },
+                            {
+                              "text": "No modals found to close\n"
+                            },
+                            {
+                              "text": "Checking for reCAPTCHA...\n"
+                            },
+                            {
+                              "text": "No reCAPTCHA found\n"
+                            },
+                            {
+                              "text": "Modal handling completed in 782ms\n"
+                            },
+                            {
+                              "text": "Handling popups and modals...\n"
+                            },
+                            {
+                              "text": "Checking for cookie banners...\n"
+                            },
+                            {
+                              "text": "No cookie banners found\n"
+                            },
+                            {
+                              "text": "Attempting to close any open modals...\n"
+                            },
+                            {
+                              "text": "No modals found to close\n"
+                            },
+                            {
+                              "text": "Checking for reCAPTCHA...\n"
+                            },
+                            {
+                              "text": "No reCAPTCHA found\n"
+                            },
+                            {
+                              "text": "Modal handling completed in 720ms\n"
+                            },
+                            {
+                              "text": "✅ Profile page loaded\n"
+                            },
+                            {
+                              "text": "✅ All profile sections updated\n"
+                            },
+                            {
+                              "text": "✅ All profile sections updated\n"
+                            },
+                            {
+                              "text": "📝 Step 5: Profile changes saved and verified\n"
+                            },
+                            {
+                              "text": "✅ Admin profile management test completed successfully!\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-06-10T13:47:42.436Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/henrycole/Desktop/automation/playwright_regression/hr_regression/test-results/account-profile-Admin-Prof-af408-te-all-admin-profile-fields-chromium/trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "8f56eee7291d19437d4f-3521a531bde3d03c4016",
+                  "file": "account/profile.spec.ts",
+                  "line": 45,
+                  "column": 13
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-06-10T13:47:34.036Z",
+    "duration": 34551.525,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

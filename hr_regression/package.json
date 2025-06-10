@@ -1,0 +1,23 @@
+{
+  "name": "hr-regression-tests",
+  "version": "1.0.0",
+  "description": "Playwright test automation framework for HR system",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "mcp": "playwright-mcp",
+    "mcp:debug": "playwright-mcp --debug",
+    "context7": "npx @upstash/context7-mcp",
+    "context7:server": "npx @upstash/context7-mcp --server"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/mcp": "^0.0.28",
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.24",
+    "@upstash/context7-mcp": "^1.0.13",
+    "typescript": "^5.3.3"
+  }
+}
