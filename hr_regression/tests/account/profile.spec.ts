@@ -101,15 +101,15 @@ test.describe('Admin Profile Management', () => {
         const comprehensiveTestData = {
             jobData: {
                 companyDivision: 'Human Resources',
-                companyDepartment: 'PlayWright Automation',
-                companyLocation: 'London Office',
-                personLocation: 'London Office',
+                companyDepartment: 'Human Resources',
+                companyLocation: 'PlayWright Automation',
+                personLocation: 'PlayWright Automation',
                 provider: 'PlayWright Test Provider',
                 contractType: 'Permanent',
                 probationDate: '01/01/2024',
                 probationReminder: '15/12/2023',
-                noticePeriod: '1 Month',
-                paymentCurrency: 'GBP - British Pound Sterling',
+                noticePeriod: '1 month',
+                paymentCurrency: 'Great British Pound',
                 joinDate: '01/01/2024'
             },
             summaryData: {
@@ -191,15 +191,15 @@ test.describe('Admin Profile Management', () => {
         console.log('📝 Step 2: Prepare test data');
         const testData = {
             companyDivision: 'Human Resources',
-            companyDepartment: 'PlayWright Automation',
-            companyLocation: 'London Office',
-            personLocation: 'London Office',
+            companyDepartment: 'Human Resources',
+            companyLocation: 'PlayWright Automation',
+            personLocation: 'PlayWright Automation',
             provider: 'PlayWright Test Provider',
             contractType: 'Permanent',
             probationDate: '01/01/2024',
             probationReminder: '15/12/2023',
-            noticePeriod: '1 Month',
-            paymentCurrency: 'GBP - British Pound Sterling',
+            noticePeriod: '1 month',
+            paymentCurrency: 'Great British Pound',
             joinDate: '01/01/2024'
         };
         

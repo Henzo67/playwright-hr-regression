@@ -102,7 +102,7 @@ export class ProfilePage {
         
         // Personal tab selectors
         this.genderSelect = page.locator('#employee_gender');
-        this.dobInput = page.locator('#employee_dob');
+        this.dobInput = page.locator('input[id*="employee_dob"]:visible, input:near(:text("Date of birth")):visible');
         this.nationalitySelect = page.locator('#employee_nationality');
         this.maritalStatusSelect = page.locator('#employee_marital_status');
         this.nationalInsuranceInput = page.locator('#employee_national_insurance_number');
@@ -168,9 +168,9 @@ export class ProfilePage {
         }
         
         // Update department
-        if (profileData.department && await this.companyDepartmentSelect.count() > 0) {
-            console.log(`📝 Updating department: ${profileData.department}`);
-            await this.companyDepartmentSelect.selectOption({ label: profileData.department });
+        if (profileData.companyDepartment && await this.companyDepartmentSelect.count() > 0) {
+            console.log(`📝 Updating company department: ${profileData.companyDepartment}`);
+            await this.companyDepartmentSelect.selectOption({ label: profileData.companyDepartment });
         }
         
         // Update company location
